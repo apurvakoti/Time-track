@@ -1,0 +1,26 @@
+{
+  "name": "2110 Consulting time tracker",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "Track time spent answering questions on the 2110 Piazza.",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "default_locale": "en",
+  "background": {
+    "page": "src/bg/background.html",
+    "persistent": true
+  },
+
+  "browser_action": {
+          "default_popup": "popup.html"
+        },
+  "permissions": [
+    "contentSettings",
+    "tabs",
+    "storage",
+    "idle"
+  ]
+}
